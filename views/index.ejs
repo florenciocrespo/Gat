@@ -1,0 +1,23 @@
+
+    <aside>
+      <h1>Factura Movil</h1>
+    <ol>
+        <fieldset class="sec1"> 
+    <form action="javascript:void(0);" id="the_form">
+      <li><input type="file" id="the_file" required="required" accept=".csv"/>
+      <li><input type="submit" value="Mostrar" class="btn"/>
+    </form>
+      </fieldset> 
+      <fieldset class="sec1"> 
+    <div id="file_info"></div>
+     <li><a href="#" class="boton" id="excel">Excel</a></li>
+    </fieldset> 
+  </ol>
+  </aside>
+  <script type="text/javascript">
+
+document.getElementById('the_form').addEventListener('submit', handleFileSelect, false);
+document.getElementById('the_file').addEventListener('change', fileInfo, false);
+
+</script>
+  
